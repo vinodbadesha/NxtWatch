@@ -1,0 +1,11 @@
+.trending-icon {
+  font-size: 25px;
+  color: #ff0000;
+}
+.trending-link-item {
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 200px;
+}

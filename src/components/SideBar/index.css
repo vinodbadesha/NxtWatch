@@ -1,0 +1,15 @@
+.sidebar-link-item {
+  text-decoration: none;
+  color: #475569;
+  display: flex;
+  align-items: center;
+}
+.activeIcon {
+  background-color: red;
+}
+.dark-icon-color {
+  color: #f4f4f4;
+}
+.light-icon-color {
+  color: #475569;
+}

@@ -1,0 +1,14 @@
+.video-item-button-icon {
+  margin-right: 5px;
+}
+.each-button-size {
+  font-size: 20px;
+}
+.button-clicked {
+  color: #2563eb;
+  font-weight: bold;
+}
+.button-not-clicked {
+  color: #64748b;
+  font-weight: bold;
+}

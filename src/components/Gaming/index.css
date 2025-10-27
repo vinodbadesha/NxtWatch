@@ -1,0 +1,11 @@
+.trending-icon {
+  font-size: 25px;
+  color: #ff0000;
+}
+.gaming-link-item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 200px;
+}
