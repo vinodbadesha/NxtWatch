@@ -1,605 +1,252 @@
-In this project, let's build **Nxt Watch** by applying the concepts we have learned till now.
-
-### Refer to the videos below:
-
-**Success View** <br/>
-
-<div style="text-align: center;">
-     <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-output-v0.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
-
-**Failure View** <br/>
-
-<div style="text-align: center;">
-    <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-watch-failure-output-v0.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
-
-### Design Files
-
-<details>
-<summary>Login Route</summary>
-
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Login](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-sm-outputs.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Login Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Login - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-light-theme-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Login - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-dark-theme-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Login Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Login Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-login-failure-dark-theme-lg-output-v1.png)
-
-</details>
 
-<details>
-<summary>Home Route</summary>
-
-- [Extra Small (Size < 576px) - Home](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-xs-outputs.png)
-- [Small (Size >= 576px) - Home - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-light-theme-sm-output.png)
-- [Small (Size >= 576px) - Home - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-dark-theme-sm-output.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Home - No Search Results](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-no-videos-sm-outputs.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Home Failure](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-success-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home - No search results - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-no-videos-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home - No search results - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-no-videos-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-failure-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
-<summary>Trending Route</summary>
-
-- [Extra Small (Size < 576px) - Trending](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-xs-outputs.png)
-- [Small (Size >= 576px) - Trending - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-light-theme-sm-output.png)
-- [Small (Size >= 576px) - Trending - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-dark-theme-sm-output.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Trending Failure](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Trending - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Trending - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-success-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Trending Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Trending Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-failure-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
-<summary>Gaming Route</summary>
-
-- [Extra Small (Size < 576px) - Gaming](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-xs-outputs.png)
-- [Small (Size >= 576px) - Gaming - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-light-theme-sm-output.png)
-- [Small (Size >= 576px) - Gaming - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-dark-theme-sm-output.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Gaming Failure](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Gaming - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Gaming - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-success-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Gaming Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Gaming Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-failure-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
-<summary>Video Item Details Route</summary>
-
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Video Item Details](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-success-sm-outputs.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Video Item Details Failure](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-failure-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Video Item Details - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-success-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Video Item Details - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-success-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Video Item Details Failure - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-failure-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Video Item Details Failure - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-failure-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
-<summary>Saved Videos Route</summary>
-
-- [Extra Small (Size < 576px) - No Saved Videos](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-sm-outputs.png)
-- [Small (Size >= 576px) - Saved Videos - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-light-theme-sm-output-v0.png)
-- [Small (Size >= 576px) - Saved Videos - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-dark-theme-sm-output-v0.png)
-- [Extra Small (Size < 576px) - Saved Videos](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-xs-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - No Saved Videos - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - No Saved Videos - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-dark-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Saved Videos - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Saved Videos - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-saved-videos-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
-<summary>Popup Design Files</summary>
-
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Logout](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-sm-outputs.png)
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Menu](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-menu-popup-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Logout - Light Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-light-theme-lg-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Logout - Dark Theme](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-dark-theme-lg-output-v0.png)
-
-</details>
-
-<details>
-<summary>Not Found Route</summary>
-
-- [Extra Small (Size < 576px) and Small (Size >= 576px) - Not Found](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-page-not-found-sm-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Not Found](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-page-not-found-light-theme-lg-output-v0.png)
-
-</details>
-
-### Set Up Instructions
-
-<details>
-<summary>Click to view</summary>
-
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
-
-### Completion Instructions
-
-<details>
-<summary>Functionality to be added</summary>
-<br/>
-
-The app must have the following functionalities
-
-- Initially, the app should be in **Light** theme
-
-- **Login Route**
-
-  - When invalid credentials are provided and the **Login** button is clicked, then the error message received from the response should be displayed
-  - When valid credentials are provided and the **Login** button is clicked, then the page should be navigated to the Home Route
-  - When an _unauthenticated_ user tries to open the Home, Trending, Gaming, Saved Videos, and Video Details Route, then the page should be navigated to the Login Route
-  - When an _authenticated_ user tries to open the Home, Trending, Gaming, Saved Videos, and Video Details Route, then the page should be navigated to the respective route
-  - When an _authenticated_ user tries to open the Login Route, then the page should be navigated to the Home Route
-  - When the **Show Password** checkbox is checked, then the password should be shown
-  - When the **Show Password** checkbox is unchecked, then the password should be masked
-
-- **Home Route**
-
-  - When an _authenticated_ user opens the Home Route,
-    - An HTTP GET request should be made to the **Home Videos API URL** with `jwt_token` in the Cookies and query parameter `search` with the initial value as an empty string
-      - **_Loader_** should be displayed while fetching the data
-      - After the data is fetched successfully, the list of videos should be displayed
-      - If the HTTP GET request made is unsuccessful, then the [Failure View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-failure-light-theme-lg-output-v0.png) should be displayed
-        - When the **Retry** button is clicked, an HTTP GET request should be made to the **Home Videos API URL**
-    - When a non-empty value is provided in the search input and the search icon button is clicked
-      - Make an HTTP GET request to the **Home Videos API URL** with `jwt_token` in the Cookies and query parameter `search` with value as the text provided in the search input
-      - **_Loader_** should be displayed while fetching the data
-      - After the data is fetched successfully, the list of videos should be displayed
-    - When the HTTP GET request made to the **Home Videos API URL** returns an empty list, then the [No Videos View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-home-no-videos-light-theme-lg-output-v0.png) should be displayed
-  - When a **Video** is clicked, then the page should be navigated to the Video Item Details Route
-  - When the **Trending** link in the Sidebar is clicked, then the page should be navigated to the Trending Route
-  - When the **Gaming** link in the Sidebar is clicked, then the page should be navigated to the Gaming Route
-  - When the **Saved Videos** link in the Sidebar is clicked, then the page should be navigated to the Saved Videos Route
-
-- **Trending Route**
-
-  - When an _authenticated_ user opens the Trending Route,
-    - An HTTP GET request should be made to the **Trending Videos API URL** with `jwt_token` in the Cookies
-      - **_Loader_** should be displayed while fetching the data
-      - After the data is fetched successfully, the list of videos should be displayed
-      - If the HTTP GET request made is unsuccessful, then the [Failure View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-trending-failure-light-theme-lg-output-v0.png) should be displayed
-        - When the **Retry** button is clicked, an HTTP GET request should be made to the **Trending Videos API URL**
-  - When a **Video** is clicked, then the page should be navigated to the Video Item Details Route
-  - When the **Home** link in the Sidebar is clicked, then the page should be navigated to the Home Route
-  - When the **Gaming** link in the Sidebar is clicked, then the page should be navigated to the Gaming Route
-  - When the **Saved Videos** link in the Sidebar is clicked, then the page should be navigated to the Saved Videos Route
-
-- **Gaming Route**
-
-  - When an _authenticated_ user opens the Gaming Route,
-    - An HTTP GET request should be made to the **Gaming Videos API URL** with `jwt_token` in the Cookies
-      - **_Loader_** should be displayed while fetching the data
-      - After the data is fetched successfully, the list of videos should be displayed
-      - If the HTTP GET request made is unsuccessful, then the [Failure View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-gaming-failure-light-theme-lg-output-v0.png) should be displayed
-        - When the **Retry** button is clicked, an HTTP GET request should be made to the **Gaming Videos API URL**
-  - When a **Video** is clicked, then the page should be navigated to the Video Item Details Route
-  - When the **Home** link in the Sidebar is clicked, then the page should be navigated to the Home Route
-  - When the **Trending** link in the Sidebar is clicked, then the page should be navigated to the Trending Route
-  - When the **Saved Videos** link in the Sidebar is clicked, then the page should be navigated to the Saved Videos Route
-
-- **Video Item Details Route**
-
-  - When an _authenticated_ user opens the Video Item Details Route
-    - An HTTP GET request should be made to the **Video Details API URL** with `jwt_token` in the Cookies and `video_id` as a path parameter
-      - **_Loader_** should be displayed while fetching the data
-      - After the data is fetched successfully, the response received should be displayed
-      - If the HTTP GET request made is unsuccessful, then the [Failure View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-video-item-details-failure-light-theme-lg-output-v0.png) should be displayed
-        - When the **Retry** button is clicked, an HTTP GET request should be made to the **Video Details API URL**
-  - Corresponding video should be displayed using `react-player` package
-  - Initially, all the three buttons (Like, Dislike, Save) should be inactive
-  - When the **Like** button is clicked,
-    - It should change to active state
-    - If the **Dislike** button is already in the active state, then the **Dislike** button needs to be changed to the inactive state
-  - When the **Dislike** button is clicked,
-
-    - It should change to active state
-    - If the **Like** button is already in the active state, then the **Like** button needs to be changed to the inactive state
-
-  - When the **Save** button is clicked,
-    - It should change to active state and the respective video details should be added to the list of saved videos
-    - **Save** button text should be changed to **Saved**
-  - When the **Saved** button is clicked
-    - It should change to inactive state and the respective video details will be removed from the list of saved videos
-    - **Saved** button text should be changed to **Save**
-
-- **Saved Videos Route**
-
-  - When an _authenticated_ user opens the Saved Videos Route,
-    - If the list of saved videos is empty, then the [No Saved Videos Found View](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-no-saved-videos-light-theme-lg-output-v0.png) should be displayed
-    - The list of saved videos should be displayed
-  - When a **Video** is clicked, then the page should be navigated to the Video Item Details Route
-  - When the **Home** link in the Sidebar is clicked, then the page should be navigated to the Home Route
-  - When the **Trending** link in the Sidebar is clicked, then the page should be navigated to the Trending Route
-  - When the **Gaming** link in the Sidebar is clicked, then the page should be navigated to the Gaming Route
-
-- **Not Found Route**
-
-  - When a random path is provided as the URL path, then the page should be navigated to the Not Found Route
-
-- **Header**
-
-  - When the Website logo is clicked, then the page should be navigated to the Home Route
-  - When the theme icon button is clicked, then the theme should be changed accordingly
-  - When the **Logout** button is clicked, then the [Logout Popup](https://assets.ccbp.in/frontend/content/react-js/nxt-watch-logout-popup-light-theme-lg-output-v0.png) should be displayed
-    - When the **Cancel** button is clicked, then the popup should be closed and the page should not be navigated
-    - When the **Confirm** button is clicked, then the page should be navigated to the Login Route
-
-</details>
-
-<details>
-
-<summary>API Requests & Responses</summary>
-<br/>
-
-**Login API**
-
-#### URL: `https://apis.ccbp.in/login`
-
-#### Method: `POST`
-
-#### Description:
-
-Returns a response based on the credentials provided
-
-#### Request
-
-```json
-{
-  "username": "rahul",
-  "password": "rahul@2021"
-}
+# Nxt Watch – Video Streaming Application
+
+Nxt Watch is a React-based video streaming application inspired by YouTube. It provides users with an interface to explore videos, browse trending and gaming content, watch individual videos, and save videos for later viewing.
+
+The application integrates REST APIs to retrieve video data and authenticate users. It uses JWT-based authentication, React Context API for global state management, and React Player for video playback. It also supports light and dark themes across the application.
+
+## Live Demo
+
+[View Live Application](YOUR_DEPLOYED_WEBSITE_URL)
+
+Login: {"Username": "rahul", "Password": "rahul@2021"}
+
+## Features
+
+### Authentication
+- User login through a REST API.
+- JWT-based authentication using browser cookies.
+- Protected routes for authenticated users.
+- Automatic redirection to the login page when authentication is unavailable.
+- Logout functionality with a confirmation popup.
+- Show and hide password functionality.
+
+### Home
+- Fetch and display videos from an external API.
+- Search videos by title.
+- Display video thumbnails, channel information, view counts, and publishing dates.
+- Display a promotional banner with a close option.
+- Handle loading, failure, and empty search-result states.
+
+### Trending Videos
+- Fetch trending videos through a dedicated REST API.
+- Display video thumbnails and channel information.
+- Navigate to individual video details.
+
+### Gaming Videos
+- Retrieve gaming videos from an external API.
+- Display gaming thumbnails, titles, and worldwide view counts.
+- Navigate to individual video details.
+
+### Video Details and Playback
+- Fetch individual video information using its video ID.
+- Play videos using React Player.
+- Display video title, channel information, subscriber count, views, publishing date, and description.
+- Like and dislike interactions with mutually exclusive active states.
+- Save videos to the Saved Videos list.
+- Display loading and failure views with retry functionality.
+
+### Saved Videos
+- Display videos saved by the user.
+- Navigate to individual video details from the saved videos list.
+- Display an empty-state view when no videos have been saved.
+
+### Theme Management
+- Toggle between light and dark themes.
+- Apply theme changes across application components.
+- Dynamically update the website logo and interface styling based on the selected theme.
+
+### Navigation
+- Navigate between Home, Trending, Gaming, and Saved Videos.
+- Protected routes for authenticated pages.
+- Display a Not Found page for invalid routes.
+- Responsive header and sidebar navigation.
+
+## Technology Stack
+
+| Category | Technologies |
+|---|---|
+| Frontend | React.js, JavaScript, HTML5, CSS3 |
+| Routing | React Router DOM |
+| State Management | React Context API, React Component State |
+| API Integration | REST APIs, Fetch API |
+| Authentication | JWT, js-cookie |
+| Video Playback | React Player |
+| Styling | Styled Components, CSS |
+| UI Components | React Icons, React Loader Spinner, ReactJS Popup |
+| Date Formatting | date-fns |
+| Testing | Jest, React Testing Library |
+| Development Tools | CRACO, Create React App |
+
+## Application Architecture
+
+The application follows a component-based React architecture.
+
+- **App.js:** Manages application routes, global theme state, and saved video state through the Context Provider.
+- **AppContext:** Shares saved videos, theme preferences, and associated operations across components.
+- **ProtectedRoute:** Checks JWT authentication before rendering protected application routes.
+- **LoginForm:** Handles user login, password visibility, authentication API requests, and JWT cookie management.
+- **Home:** Retrieves and displays videos, handles search functionality, and manages the promotional banner.
+- **Trending:** Fetches and displays trending videos.
+- **Gaming:** Retrieves and displays gaming videos.
+- **VideoItem:** Displays individual video thumbnails and channel information.
+- **VideoItemDetails:** Fetches video details, manages video playback, and handles like, dislike, and save interactions.
+- **SavedVideos:** Displays the collection of saved videos.
+- **TopHeader:** Provides theme switching, website navigation, and logout functionality.
+- **SideBar:** Provides navigation between the main application sections.
+
+## Project Structure
+
+```text
+NxtWatch/
+├── public/
+│   ├── img/
+│   ├── index.html
+│   └── manifest.json
+│
+├── src/
+│   ├── components/
+│   │   ├── Gaming/
+│   │   ├── Home/
+│   │   ├── LoginForm/
+│   │   ├── NotFound/
+│   │   ├── ProtectedRoute/
+│   │   ├── SavedVideos/
+│   │   ├── SideBar/
+│   │   ├── TopHeader/
+│   │   ├── Trending/
+│   │   ├── VideoItem/
+│   │   └── VideoItemDetails/
+│   │
+│   ├── Context/
+│   │   └── AppContext.js
+│   │
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── setupTests.js
+│
+├── package.json
+└── README.md
 ```
 
-#### Sample Success Response
+## API Integration
 
-```json
-{
-  "jwt_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwicm9sZSI6IlBSSU1FX1VTRVIiLCJpYXQiOjE2MTk2Mjg2MTN9.nZDlFsnSWArLKKeF0QbmdVfLgzUbx1BGJsqa2kc_21Y"
-}
+The application uses the CCBP REST API to authenticate users and retrieve video information.
+
+Base API URL:
+
+```text
+https://apis.ccbp.in
 ```
 
-#### Sample Failure Response
+| Endpoint | Method | Purpose |
+|---|---|---|
+| `/login` | POST | Authenticate users and retrieve JWT |
+| `/videos/all?search=` | GET | Retrieve videos and search results |
+| `/videos/trending` | GET | Retrieve trending videos |
+| `/videos/gaming` | GET | Retrieve gaming videos |
+| `/videos/:id` | GET | Retrieve individual video details |
 
-```json
-{
-  "status_code": 404,
-  "error_msg": "Username is not found"
-}
+Authenticated API requests include the JWT token in the Authorization header.
+
+## State Management
+
+React Context API is used to share application-wide state.
+
+The application context manages:
+
+- `savedVideosList` – Stores videos saved by the user.
+- `isThemeDark` – Tracks the currently selected theme.
+- `addVideoToList()` – Adds a video to the saved videos collection.
+- `toggleTheme()` – Switches between light and dark themes.
+
+Individual components also use React component state to manage API responses, loading states, search input, and video interactions.
+
+## Authentication Workflow
+
+1. The user enters their username and password.
+2. The application sends a POST request to the login API.
+3. On successful authentication, the API returns a JWT token.
+4. The token is stored in a browser cookie using js-cookie.
+5. ProtectedRoute checks for the JWT cookie before rendering authenticated pages.
+6. The token is included in authenticated API requests.
+
+## Installation and Setup
+
+### Prerequisites
+
+- Node.js
+- npm or pnpm
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-**Home Videos API**
+### 2. Navigate to the Project Directory
 
-#### URL: `https://apis.ccbp.in/videos/all?search=`
-
-#### Method: `GET`
-
-#### Description:
-
-Returns a response containing the list of all videos
-
-#### Response
-
-```json
-{
-  "total": 60,
-  "videos": [
-    {
-      "id": "30b642bd-7591-49f4-ac30-5c538f975b15",
-      "title": "Sehwag shares his batting experience in iB Cricket | iB Cricket Super Over League",
-      "thumbnail_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ibc-sol-1-img.png",
-      "channel": {
-        "name": "iB Cricket",
-        "profile_image_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ib-cricket-img.png"
-      },
-      "view_count": "1.4K",
-      "published_at": "Apr 19, 2019"
-    },
-    ...
-  ],
-}
+```bash
+cd NxtWatch
 ```
 
-**Trending Videos API**
+### 3. Install Dependencies
 
-#### URL: `https://apis.ccbp.in/videos/trending`
-
-#### Method: `GET`
-
-#### Description:
-
-Returns a response containing the list of trending videos
-
-#### Response
-
-```json
-{
-  "total": 30,
-  "videos": [
-    {
-      "id": "ad9822d2-5763-41d9-adaf-baf9da3fd490",
-      "title": "iB Hubs Announcement Event",
-      "thumbnail_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ibhubs-img.png",
-      "channel": {
-        "name": "iB Hubs",
-        "profile_image_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ib-hubs-img.png"
-      },
-      "view_count": "26K",
-      "published_at": "Nov 29, 2016"
-    },
-    ...
-  ]
-}
+```bash
+npm install
 ```
 
-**Gaming Videos API**
+### 4. Start the Development Server
 
-#### URL: `https://apis.ccbp.in/videos/gaming`
-
-#### Method: `GET`
-
-#### Description:
-
-Returns a response containing the list of gaming videos
-
-#### Response
-
-```json
-{
-  "total": 30,
-  "videos": [
-    {
-      "id": "b214dc8a-b126-4d15-8523-d37404318347",
-      "title": "Drop Stack Ball",
-      "thumbnail_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/drop-stack-ball-img.png",
-      "view_count": "44K"
-    },
-    ...
-  ]
-}
+```bash
+npm start
 ```
 
-**Video Details API**
+The application will be available at:
 
-#### URL: `https://apis.ccbp.in/videos/:id`
-
-#### Example: `https://apis.ccbp.in/videos/802fcd20-1490-43c5-9e66-ce6dfefb40d1`
-
-#### Method: `GET`
-
-#### Description:
-
-Returns a response containing the details of a specific video
-
-#### Response
-
-```json
-{
-  "video_details": {
-    "id": "ad9822d2-5763-41d9-adaf-baf9da3fd490",
-    "title": "iB Hubs Announcement Event",
-    "video_url": "https://www.youtube.com/watch?v=pT2ojWWjum8",
-    "thumbnail_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ibhubs-img.png",
-    "channel": {
-      "name": "iB Hubs",
-      "profile_image_url": "https://assets.ccbp.in/frontend/react-js/nxt-watch/ib-hubs-img.png",
-      "subscriber_count": "1M"
-    },
-    "view_count": "26K",
-    "published_at": "Nov 29, 2016",
-    "description": "iB Hubs grandly celebrated its Announcement Event in November 13, 2016, in the presence of many eminent personalities from the Government, Industry, and Academia with Shri Amitabh Kant, CEO, NITI Aayog as the Chief Guest."
-  }
-}
+```text
+http://localhost:3000
 ```
 
-</details>
+## Testing
 
-### Quick Tips
+The project uses Jest and React Testing Library for component testing.
 
-<details>
-<summary>Click to view</summary>
-<br>
+Run tests using:
 
-- To build this project, take a look at the <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b01fca1c-aa5c-4d79-b81e-0220e7649bd0&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Popup</a> and <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b6392b63-25f6-4215-be09-9f23ad91d789&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Video Player</a> reading materials
-
-- To style popup content use `.popup-content` class
-
-```jsx
-<Popup
-  modal
-  trigger={
-    //write code here
-  }
-  className="popup-content"
->
-  //write code here
-</Popup>
+```bash
+npm test
 ```
 
-- Use `formatDistanceToNow` function to find the difference between the given date and now in words
+## Production Build
 
-```jsx
-import {formatDistanceToNow} from 'date-fns'
-console.log(formatDistanceToNow(new Date(2021, 8, 20)))
-// Return the distance between the given date and now in words.
+Generate a production build using:
+
+```bash
+npm run build
 ```
 
-</details>
+## Current Limitations
 
-### Important Note
+- Saved videos are maintained in React Context and are not persisted across page reloads.
+- Theme preferences are maintained in application state and reset when the application is reloaded.
+- Like and dislike interactions update the local UI state; no backend persistence is implemented.
+- The saved video implementation supports adding videos, but does not currently implement removing saved videos.
+- Video data and authentication depend on the availability of external CCBP APIs.
 
-<details>
-<summary>Click to view</summary>
+## Future Improvements
 
-<br/>
+- Persist saved videos using browser storage or a backend database.
+- Persist user theme preferences.
+- Implement removal of saved videos.
+- Integrate backend support for likes and dislikes.
+- Add personalized video recommendations.
+- Improve search functionality and video discovery.
 
-**The following instructions are required for the tests to pass**
+## Author
 
-- Render `Home` Route component when the path in URL matches `/`
-- Render `Login` Route component when the path in URL matches `/login`
-- Render `Trending` Route component when the path in URL matches `/trending`
-- Render `Gaming` Route component when the path in URL matches `/gaming`
-- Render `Saved Videos` Route component when the path in URL matches `/saved-videos`
-- Render `Video Item Details` Route component when the path in URL matches `/videos/:id`
-- Render `Not Found` Route component when the path in URL matches `/not-found`
-- No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js`
-- User credentials
+**Vinod Badesha**
 
-  ```text
-   username: rahul
-   password: rahul@2021
-
-  ```
-
-- Wrap the `Loader` component with an HTML container element and add the `data-testid` attribute value as **loader** to it
-
-  ```jsx
-  <div className="loader-container" data-testid="loader">
-    <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
-  </div>
-  ```
-
-- The HTML button element with search icon in Home Route should have the `data-testid` attribute value as **searchButton** to it
-
-- **Styled Components** should be used for styling purposes
-- The theme icon button should have the `data-testid` as **theme**
-- The video thumbnail images in the Routes should have the alt as **video thumbnail**
-- The channel logos in Home Route should have the alt as **channel logo**
-
-- **Home Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **home**
-  - The Route should consist of a banner and it contains a close button with `data-testid` as **close**
-  - The Route should consist of a banner as shown in the design files with `data-testid` as **banner**
-  - The Route should consist of an HTML image element with alt as **nxt watch logo** and src as the given Nxt Watch logo URL in the banner
-  - The HTML container element with `data-testid` as **home** should have the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#181818** color should be applied as a background color
-
-- **Trending Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **trending**
-  - The HTML container element with `data-testid` as **trending** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Gaming Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **gaming**
-  - The HTML container element with `data-testid` as **gaming** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Saved Videos Route**
-
-  - The Route should consist of an HTML container element with `data-testid` as **savedVideos**
-  - The HTML container element with `data-testid` as **savedVideos** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- **Video Item Details Route**
-
-  - The **Video Item Details** Route should consist of an HTML container element with `data-testid` as **videoItemDetails**
-  - The HTML container element with `data-testid` as **videoItemDetails** should persist the background color,
-    - If the Light theme is applied, then the **#f9f9f9** color should be applied as a background color
-    - If the Dark theme is applied, then the **#0f0f0f** color should be applied as a background color
-
-- The **Website logos** for Light theme and Dark theme should have the alt as **website logo**
-- The **Failure** images for Light theme and Dark theme should have the alt as **failure view**
-- In the Video Item Details Route, the **#2563eb** color should be applied as `color` for any active button i.e (Like, Dislike, Save)
-- In the Video Item Details Route, the **#64748b** color should be applied as `color` for any inactive button i.e (Like, Dislike, Save)
-
-</details>
-
-### Resources
-
-<details>
-<summary>Image URLs</summary>
-
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png)
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-dark-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-dark-theme-img.png)
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png) alt should be **profile**
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png)
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png)
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png) alt should be **no videos**
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-no-saved-videos-img.png) alt should be **no saved videos**
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-light-theme-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-light-theme-img.png) alt as **not found**
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png) **banner background image**
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-facebook-logo-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-facebook-logo-img.png) alt should be **facebook logo**
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-twitter-logo-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-twitter-logo-img.png) alt should be **twitter logo**
-- [https://assets.ccbp.in/frontend/react-js/nxt-watch-linked-in-logo-img.png](https://assets.ccbp.in/frontend/react-js/nxt-watch-linked-in-logo-img.png) alt should be **linkedin logo**
-
-</details>
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #0f0f0f; width: 150px; padding: 10px; color: white">Hex: #0f0f0f</div>
-<div style="background-color: #f9f9f9; width: 150px; padding: 10px; color: black">Hex: #f9f9f9</div>
-<div style="background-color: #f8fafc; width: 150px; padding: 10px; color: black">Hex: #f8fafc</div>
-<div style="background-color: #1e293b; width: 150px; padding: 10px; color: white">Hex: #1e293b</div>
-<div style="background-color: #f1f5f9; width: 150px; padding: 10px; color: black">Hex: #f1f5f9</div>
-<div style="background-color: #475569; width: 150px; padding: 10px; color: white">Hex: #475569</div>
-<div style="background-color: #f1f1f1; width: 150px; padding: 10px; color: black">Hex: #f1f1f1</div>
-<div style="background-color: #181818; width: 150px; padding: 10px; color: white">Hex: #181818</div>
-<div style="background-color: #e2e8f0; width: 150px; padding: 10px; color: black">Hex: #e2e8f0</div>
-<div style="background-color: #94a3b8; width: 150px; padding: 10px; color: black">Hex: #94a3b8</div>
-<div style="background-color: #4f46e5; width: 150px; padding: 10px; color: white">Hex: #4f46e5</div>
-<div style="background-color: #64748b; width: 150px; padding: 10px; color: white">Hex: #64748b</div>
-<div style="background-color: #231f20; width: 150px; padding: 10px; color: white">Hex: #231f20</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #212121; width: 150px; padding: 10px; color: white">Hex: #212121</div>
-<div style="background-color: #616e7c; width: 150px; padding: 10px; color: white">Hex: #616e7c</div>
-<div style="background-color: #3b82f6; width: 150px; padding: 10px; color: white">Hex: #3b82f6</div>
-<div style="background-color: #00306e; width: 150px; padding: 10px; color: white">Hex: #00306e</div>
-<div style="background-color: #ebebeb; width: 150px; padding: 10px; color: black">Hex: #ebebeb</div>
-<div style="background-color: #7e858e; width: 150px; padding: 10px; color: black">Hex: #7e858e</div>
-<div style="background-color: #d7dfe9; width: 150px; padding: 10px; color: black">Hex: #d7dfe9</div>
-<div style="background-color: #cbd5e1; width: 150px; padding: 10px; color: black">Hex: #cbd5e1</div>
-<div style="background-color: #000000; width: 150px; padding: 10px; color: white">Hex: #000000</div>
-<div style="background-color: #ff0b37; width: 150px; padding: 10px; color: white">Hex: #ff0b37</div>
-<div style="background-color: #ff0000; width: 150px; padding: 10px; color: white">Hex: #ff0000</div>
-<div style="background-color: #383838; width: 150px; padding: 10px; color: white">Hex: #383838</div>
-<div style="background-color: #606060; width: 150px; padding: 10px; color: white">Hex: #606060</div>
-<div style="background-color: #909090; width: 150px; padding: 10px; color: black">Hex: #909090</div>
-<div style="background-color: #cccccc; width: 150px; padding: 10px; color: black">Hex: #cccccc</div>
-<div style="background-color: #424242; width: 150px; padding: 10px; color: black">Hex: #424242</div>
-<div style="background-color: #313131; width: 150px; padding: 10px; color: black">Hex: #313131</div>
-<div style="background-color: #f4f4f4; width: 150px; padding: 10px; color: black">Hex: #f4f4f4</div>
-<div style="background-color: #424242; width: 150px; padding: 10px; color: black">Hex: #424242</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+GitHub: [vinodbadesha](https://github.com/vinodbadesha)
